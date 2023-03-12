@@ -70,6 +70,7 @@
     font-size: 1.5625rem;
     line-height: 2.1875rem;
   }
+
   /* about */
   .client-info > div {
     justify-content: center;
@@ -78,5 +79,22 @@
   .about_wrapper .client-info:before {
     top: 0.25rem;
     left: 2.8125rem;
+  }
+}
+
+@media (max-width: 575.5px) {
+  .blog_wrapper .blog_details {
+    position: absolute;
+    top: 2.1875rem;
+    left: 2.1875rem;
+    right: 2.1875rem;
+    bottom: 2.1875rem;
+  }
+}
+
+@media (max-width: 390px) {
+  /* top banner */
+  .banner_wrapper .banner-content h2::after {
+    left: 34%;
   }
 }

@@ -1,12 +1,12 @@
 /* TABLE OF CONTENTS */
 /* ------------------
 1. General
-2. Navbar
-3. Banner
-4. About
-5. Services
-6. Portfolio
-7. Blog
+2. Custom
+3. Navbar
+4. Banner
+5. About
+6. Education
+7. Skills
 8. Contact
 9. Footer
 -------------------- */
@@ -55,7 +55,7 @@ a {
   text-decoration: none;
 }
 
-/* 1 Custom CSS */
+/* 2 Custom CSS */
 
 ::-webkit-scrollbar {
   width: 0.25rem;
@@ -156,7 +156,8 @@ p {
   font-weight: 400;
 }
 
-/* 2 Navbar */
+/* 3 Navbar */
+
 .header_wrapper .navbar {
   padding: 0.9375rem 0;
   -webkit-transition: all 0.2s linear;
@@ -166,7 +167,7 @@ p {
 
 .header_wrapper .navbar-brand img {
   max-width: 10rem;
-  height: auto;
+  height: 5.5rem;
 }
 
 .header_wrapper .navbar-toggler:focus {
@@ -199,4 +200,182 @@ p {
   background-color: var(--bg-white);
   -webkit-box-shadow: 0 0.25rem 0.375rem 0 rgba(12, 0, 46, 0.05);
   box-shadow: 0 0.25rem 0.375rem 0 rgba(12, 0, 46, 0.05);
+}
+
+/* 4 Banner */
+.banner_wrapper {
+  padding-top: 6.875rem;
+  z-index: 1;
+  background-image: url("../images/home-banner.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.banner_wrapper .col-lg-7 {
+  vertical-align: middle;
+  align-self: center;
+}
+
+.banner_wrapper .banner-content h2::after {
+  content: "";
+  width: 60%;
+  height: 0.125rem;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  background: var(--bg-black);
+  overflow-x: hidden;
+}
+
+/* 5 About */
+.about_wrapper .single-logo-item {
+  width: 100%;
+  height: 6.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.0625rem solid var(--bg-gray);
+  box-shadow: none;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.about_wrapper .single-logo-item:hover {
+  border: 0.0625rem solid transparent;
+  box-shadow: 0 0.5rem 1.875rem rgb(118 85 225 / 15%);
+}
+
+/* 6 Education */
+.education_wrapper .card {
+  background-color: var(--bg-light);
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.education_wrapper .card:hover {
+  box-shadow: 0 0.9375rem 1.875rem rgb(77 87 222 / 30%);
+  background: var(--bg-white);
+}
+
+/* 7 Skills */
+.skills_wrapper .single-progress {
+  margin-top: 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills_wrapper .single-progress .progress {
+  height: 4px;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: var(--bg-light);
+  overflow: visible;
+}
+
+.skills_wrapper .progress-bar {
+  background-color: var(--primary-color);
+  background-image: var(--gradient);
+}
+
+.skills_wrapper .single-progress h6 {
+  text-align: left;
+}
+
+.skills_wrapper .single-progress .label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+/* 8 contact */
+.newsletter {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/subscribe-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 9.375rem 0;
+}
+
+.newsletter input {
+  line-height: 3rem;
+  padding: 0 1.5625rem;
+  border: 0.125rem solid var(--bg-white);
+  background: transparent;
+  font-weight: 400;
+  border-radius: 0.3125rem;
+  color: var(--text-white);
+}
+
+.form-control:focus {
+  color: var(--text-white);
+  background-color: transparent;
+  border-color: var(--bg-white);
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: var(--text-white);
+}
+
+/* 9 footer */
+.footer_wrapper .footer-logo img {
+  max-width: 12.5rem;
+  height: auto;
+}
+
+.footer_wrapper .social-icon li {
+  margin: 0.375rem;
+}
+
+.footer_wrapper .social-icons a {
+  line-height: 1.875rem;
+  font-size: 1.5625rem;
+  display: inline-block;
+  color: var(--text-black);
+  text-align: center;
+  margin: 0 0.625rem;
+}
+
+.footer_wrapper .social-icons a:hover {
+  color: var(--primary-color);
+}
+
+.footer_wrapper .copyright-text p {
+  font-size: 0.6875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+
+.footer_wrapper .footer-text a {
+  color: var(--primary-color);
+}
+
+/* scrool up */
+.scroolup {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  background-color: var(--primary-color);
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  transition: 0.4s;
+}
+.scroolup:hover {
+  background-color: var(--secondary-color);
+}
+.scroolup_icon {
+  font-size: 1.5rem;
+  color: var(--text-white);
 }
